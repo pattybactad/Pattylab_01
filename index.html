@@ -1,11 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <title>Patty Bactad Website</title>
+    </head>
+
+    <body>
+      <h2>This is a test</h2>
+        <h1>Hello There!</h1>
+        <!---------------------------ABOUT MYSELF--------------------------->
+            <h3>My name is Patty from the Philippines. </h3>
+            <p>
+                I'm a creative person who is an aspiring web design and developer, as well as graphic designer.<br>
+                This is my first time in Canada, and would love to explore around more during my stay here.<br>
+                Looking forward to other fun things to do here as well.<br>
+
+                <!---------------------------USED <data> TO ENUMERATE MY INTERESTS/HOBBIES--------------------------->
+                <h4>My interests revolves around:</h4>
+                <ul>
+                    <li><data value="400">photo walks</data></li>
+                    <li><data value="400">sketch/doodle</data></li>
+                    <li><data value="400">going to different places and trying different foods</data></li>
+                    <li><data value="400">watch animes, cooking shows, and true crime documentaries, or</data></li>
+                    <li><data value="400">working out</data></li>
+                </ul>
+            </p>
+
+        <!---------------------------USED <img> THAT REPRESENTS MYSELF/HOBBY THAT I LIKE---------------------------->
+        <h4>I love collecting moments through pictures</h4>
+        <img
+            class="fit-picture"
+            src="photo.jpeg" 
+            alt="Me"
+            width="300" height="400"
+            />
+
+        <!---------------------------USED <a> FOR A LINK TO ANOTHER WEBSITE---------------------------><br><br>
+        <p>Some of my interest involves browsing  
+            <a href="https://www.pinterest.ca/search/pins/?rs=ac&len=2&q=branding%20design&eq=branding&etslf=4065">
+                <text x="20" y="20" text-anchor="left">inspiration</text>
+            </a>
+            online to fuel my creativity.
+        </p>
+        
+        <!---------------------------<iframe> FOR YOUTUBE VIDEO--------------------------->
+        <h4>Here is a sample of music that I enjoy listening to</h4>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/lP26UCnoH9s?si=m91qxt00mkJosm5E" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+
+
+        <!---------------------------THIS IS FOR IMAGE GALLERY CODE--------------------------->
+        <!DOCTYPE html>
+        <html>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        img {
+          vertical-align: middle;
+        }
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+          position: relative;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        </style>
+        <body>
+        
+        <h2 style="text-align:center">My most recent travel was in Taiwan</h2>
+        
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="1.jpeg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="2.jpeg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="3.jpeg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="4.jpeg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="5.jpeg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="6.jpeg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Taiwan at night">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Spicy shrimp wonton">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Chiang Kai-Shek Memorial Hall">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Shifen Waterfall">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Rainbow Road at Ximending Nigth Market">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Me (smile!)">
+            </div>
+          </div>
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+        </body>
+        </html>
+        <!---------------------------THIS IS THE ***END*** OF IMAGE GALLERY CODE--------------------------->
+
+
+        <!---------------------------THIS IS FOOTER CODE--------------------------->
+        <style>
+          .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+          }
+          
+          .all-browsers > h1, .browser {
+            margin: 10px;
+            padding: 5px;
+          }
+          
+          .browser {
+            background: white;
+          }
+          
+          .browser > h2, p {
+            margin: 4px;
+            font-size: 90%;
+          }
+          
+          footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(122, 157, 233);
+            color: white;
+          }
+          </style>
+        
+        <footer>
+          <small>
+            Copyright © 2023 Patty Bactad. All Rights Reserved.
+          </small>
+        </footer>
+
+        <!---------------------------THIS IS THE ***END*** OF FOOTER CODE--------------------------->
+
+
+    </body>
+    <script>
+        console.log("This is a test log.");
+    </script>
+
 </html>
+
