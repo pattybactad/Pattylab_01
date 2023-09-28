@@ -1,92 +1,242 @@
-.fit-picture {
-    width: 250px;
-  }
+/*----------INTRO----------*/
+h1 {
+  color: rgb(80, 91, 216);
+  text-align: center;
+}
 
-/*---------------------------THIS IS FOR IMAGE GALLERY CODE---------------------------*/
-  * {
-    box-sizing: border-box;
-  }
+/*----------BODY----------*/
+body {
+  font-family: Montserrat;
+  font-size: 20px; color: rgb(224, 209, 125);
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.english {
+font-family: "Montserrat", sans-serif;
+}
+.no-syn {
+font-synthesis-style: none;
+}
+
+/*----------MY IMG INTRO----------*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 0px 20px;
+  max-width:100%;
+  height:auto;
+}
+
+/****INSERT HEADER BUTTONS HERE****/
+
+
+
+
+/*----------GRID LAYOUT----------*/
+
+* {
+box-sizing: border-box;
+}
+
+.menu {
+float: left;
+width: 20%;
+text-align: center;
+background-color: #6c6969;
+}
+
+.menu a {
+background-color: #ea53d3;
+padding: 10px 0px 10px 0px;
+margin-top: 7px;
+display: block;
+width: 100%;
+color: rgb(255, 255, 255);
+}
+
+.main {
+float: left;
+width: 60%;
+padding: 0px 0px 0px 0px;
+}
+
+.right {
+background-color: #15bb6b;
+float: left;
+width: 20%;
+padding: 0px 10px 0px 10px;
+margin-top: 0px;
+text-align: center;
+}
+
+.footer {
+  background-color:#547de6;
+  color: black;
+  text-align:center;
+  padding:40px;
+  margin-top:0px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 620px) {
+/* For mobile phones: */
+.menu, .main, .right {
+  width: 100%;
+}
+}
+
+/*----------Let's connect BUTTON----------*/
+.button {
+  border: none;
+  padding: 12px 30px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 3px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(81, 124, 187); 
+  color: rgb(255, 255, 255); 
+  border: 2px rgb(81, 124, 187);
+}
+
+.button1:hover {
+  background-color: #8e3535;
+  color: white;
+}
+
+
+
+/*----------IMAGE GALLERY----------*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgb(122, 157, 233);
+  padding: 5px 16px;
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-/*---------------------------THIS IS THE ***END*** OF IMAGE GALLERY CODE---------------------------*/
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+/*----------SOCMED ICON BUTTONS----------*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #cb1aa5;
+  color: white;
+}
+
