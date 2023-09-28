@@ -13,296 +13,184 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-    <body>
-      <h2>This is a test</h2>
-        <h1>Hello There!</h1>
-        <!---------------------------ABOUT MYSELF--------------------------->
-            <h3>My name is Patty from the Philippines. </h3>
-            <p>
-                I'm a creative person who is an aspiring web design and developer, as well as graphic designer.<br>
-                This is my first time in Canada, and would love to explore around more during my stay here.<br>
-                Looking forward to other fun things to do here as well.<br>
+<!----------HEADER INTRO---------->
+<body>
+  <div style="background-color:#b32929;padding:50px;text-align:center;">
+      <h1 class="english">PATTY BACTAD</h1>
+      <p class="english" style="text-align:center;">Web Design & Developer Student</p>
+  </div>
+    
+  <div style="overflow:auto">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+    
+      <!----------MAIN/MIDDLE COLUMN---------->
+      <div class="main">
+      <img src="me.jpg" alt="Me" class="center">
+        <h2 class="english" style="text-align:center;">A Little bit About Me</h2>
+          <p class="english" style="text-align:justify;">
+              Patty was an information security engineer with experience of monitoring and investigating network traffic,
+              performing incident investigations like data gathering, root-cause analysis or computer forensics to create evidence
+              in an event of a breach in a network.<br>
+              Her background in security incident investigation made her competent in identifying a fraudulent activity online.<br><br>
+              Patty is a multi-passionate creative, who currently explores different art mediums in creating her portfolio.<br>
+              She likes photography, doodling, painting, watching anime, travelling, & trying new foods in different places. <br>
+              Patty is also an aspiring web dev & graphic designer.<br>
+          </p>
 
-                <!---------------------------USED <data> TO ENUMERATE MY INTERESTS/HOBBIES--------------------------->
-                <h4>My interests revolves around:</h4>
-                <ul>
-                    <li><data value="400">photo walks</data></li>
-                    <li><data value="400">sketch/doodle</data></li>
-                    <li><data value="400">going to different places and trying different foods</data></li>
-                    <li><data value="400">watch animes, cooking shows, and true crime documentaries, or</data></li>
-                    <li><data value="400">working out</data></li>
-                </ul>
-            </p>
+          <p class="english" style="text-align:justify;">Some of my interest involves browsing  
+              <a href="https://www.pinterest.ca/search/pins/?rs=ac&amp;len=2&amp;q=branding%20design&amp;eq=branding&amp;etslf=4065">
+                  <text x="20" y="20" text-anchor="left">inspiration</text>
+              </a>
+              online to fuel my creativity.<br><br><br><br>
+          </p>
 
-        <!---------------------------USED <img> THAT REPRESENTS MYSELF/HOBBY THAT I LIKE---------------------------->
-        <h4>I love collecting moments through pictures</h4>
-        <img
-            class="fit-picture"
-            src="photo.jpeg" 
-            alt="Me"
-            width="300" height="400"
-            />
+          <!----------<iframe> FOR YOUTUBE VIDEO---------->
+          <h2 class="english" style="text-align:center">Here is a sample of music that I enjoy listening to <br><br>
+              <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/lP26UCnoH9s?si=m91qxt00mkJosm5E" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+              </iframe>
+          </h2>
+      
+          <!----------BUTTON for JavaScript Assignment---------->
+          <p class="english" style="text-align:center">I would like to connect to like-minded people, to learn and share experience and expertise in this field.<br><br>
+              <button class="button button1" id="myButton" onclick="myClickFunction();">Let's Connect</button>
+          </p>
 
-        <!---------------------------USED <a> FOR A LINK TO ANOTHER WEBSITE---------------------------><br><br>
-        <p>Some of my interest involves browsing  
-            <a href="https://www.pinterest.ca/search/pins/?rs=ac&len=2&q=branding%20design&eq=branding&etslf=4065">
-                <text x="20" y="20" text-anchor="left">inspiration</text>
-            </a>
-            online to fuel my creativity.
-        </p>
-        
-        <!---------------------------<iframe> FOR YOUTUBE VIDEO--------------------------->
-        <h4>Here is a sample of music that I enjoy listening to</h4>
-        <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/lP26UCnoH9s?si=m91qxt00mkJosm5E" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen></iframe>
-
-
-        <!---------------------------THIS IS FOR IMAGE GALLERY CODE--------------------------->
-        <!DOCTYPE html>
-        <html>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        body {
-          font-family: Arial;
-          margin: 0;
-        }
-        
-        * {
-          box-sizing: border-box;
-        }
-        
-        img {
-          vertical-align: middle;
-        }
-        
-        /* Position the image container (needed to position the left and right arrows) */
-        .container {
-          position: relative;
-        }
-        
-        /* Hide the images by default */
-        .mySlides {
-          display: none;
-        }
-        
-        /* Add a pointer when hovering over the thumbnail images */
-        .cursor {
-          cursor: pointer;
-        }
-        
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 40%;
-          width: auto;
-          padding: 16px;
-          margin-top: -50px;
-          color: white;
-          font-weight: bold;
-          font-size: 20px;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-          -webkit-user-select: none;
-        }
-        
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        /* Container for image text */
-        .caption-container {
-          text-align: center;
-          background-color: #222;
-          padding: 2px 16px;
-          color: white;
-        }
-        
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        /* Six columns side by side */
-        .column {
-          float: left;
-          width: 16.66%;
-        }
-        
-        /* Add a transparency effect for thumnbail images */
-        .demo {
-          opacity: 0.6;
-        }
-        
-        .active,
-        .demo:hover {
-          opacity: 1;
-        }
-        </style>
-        <body>
-        
-        <h2 style="text-align:center">My most recent travel was in Taiwan</h2>
-        
-        <div class="container">
-          <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="1.jpeg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="2.jpeg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="3.jpeg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="4.jpeg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="5.jpeg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="6.jpeg" style="width:100%">
-          </div>
-            
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-        
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-        
-          <div class="row">
-            <div class="column">
-              <img class="demo cursor" src="1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Taiwan at night">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Spicy shrimp wonton">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Chiang Kai-Shek Memorial Hall">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Shifen Waterfall">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Rainbow Road at Ximending Nigth Market">
-            </div>    
-            <div class="column">
-              <img class="demo cursor" src="6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Me (smile!)">
-            </div>
-          </div>
-        </div>
-        
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("demo");
-          let captionText = document.getElementById("caption");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-        </script>
-        </body>
-        </html>
-        <!---------------------------THIS IS THE ***END*** OF IMAGE GALLERY CODE--------------------------->
-
-
-        <!---------------------------THIS IS FOOTER CODE--------------------------->
-        <style>
-          .all-browsers {
-            margin: 0;
-            padding: 5px;
-            background-color: rgb(255, 255, 255);
-          }
+          <!----------IMAGE BUTTON ICONS---------->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
           
-          .all-browsers > h1, .browser {
-            margin: 10px;
-            padding: 5px;
-          }
-          
-          .browser {
-            background: white;
-          }
-          
-          .browser > h2, p {
-            margin: 4px;
-            font-size: 90%;
-          }
-          
-          footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgb(122, 157, 233);
-            color: white;
-          }
-          </style>
-        
-        <footer>
-          <small>
-            Copyright © 2023 Patty Bactad. All Rights Reserved.
-          </small>
-        </footer>
 
-        <!---------------------------THIS IS THE ***END*** OF FOOTER CODE--------------------------->
+          <!----------IMAGE GALLERY---------->
+          <body>
+              <h2 class="english" style="text-align:center">I love documenting memories through photography</h2>
+              <div class="container">
+                  <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                      <img src="1.jpeg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                      <img src="2.jpeg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                      <img src="3.jpeg" style="width:100%">
+                  </div>
+          
+                  <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                      <img src="4.jpeg" style="width:100%">
+                  </div>
+      
+                  <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                      <img src="5.jpeg" style="width:100%">
+                  </div>
+          
+                  <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                      <img src="6.jpeg" style="width:100%">
+                  </div>
+          
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+                  <div class="caption-container">
+                      <p id="caption"></p>
+                  </div>
+      
+                  <div class="row">
+                      <div class="column">
+                          <img class="demo cursor" src="1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Mt. Pulag - My first hiking experience">
+                      </div>
+                      <div class="column">
+                          <img class="demo cursor" src="2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Enjoying the sunrise at the summit">
+                      </div>
+                      <div class="column">
+                          <img class="demo cursor" src="3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Chiang Kai-Shek Memorial Hall">
+                      </div>
+                      <div class="column">
+                          <img class="demo cursor" src="4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Shifen Waterfall">
+                      </div>
+                      <div class="column">
+                          <img class="demo cursor" src="5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Me (smile!)">
+                      </div>    
+                      <div class="column">
+                          <img class="demo cursor" src="6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Best coffee in La Union">
+                      </div>
+                  </div>
+              </div> 
+              
+              <script>
+                  let slideIndex = 1;
+                  showSlides(slideIndex);
+                  
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                  
+                  function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("demo");
+                    let captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                  }
+              </script>
+              <!--END OF Image Gallery-->
 
 
-    </body>
+          
+              
+
+      </div>
+      <!--END OF Main/Middle COLUMN-->
+
+
+      <!----------RIGHT COLUMN---------->
+      <div class="right">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+
+
+  </div>
+    
+      <!----------RIGHT COLUMN---------->
+      <div class="footer">Copyright © 2023 Patty Bactad. All Rights Reserved.</div>
+  
+      <!--END OF Main/Middle COLUMN-->
+
+</body>
     <script>
         console.log("This is a test log.");
     </script>
