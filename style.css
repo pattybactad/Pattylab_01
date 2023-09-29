@@ -1,6 +1,6 @@
 /*----------INTRO----------*/
 h1 {
-  color: rgb(80, 91, 216);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -46,16 +46,16 @@ box-sizing: border-box;
 float: left;
 width: 20%;
 text-align: center;
-background-color: #6c6969;
+background-color: #000000;
 }
 
 .menu a {
-background-color: #ea53d3;
+background-color: #ffffff;
 padding: 10px 0px 10px 0px;
 margin-top: 7px;
 display: block;
 width: 100%;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 }
 
 .main {
