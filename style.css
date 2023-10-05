@@ -110,9 +110,10 @@ text-align: center;
   border: 2px rgb(81, 124, 187);
 }
 
+/*changed button hover color and text color*/
 .button1:hover {
-  background-color: #8e3535;
-  color: white;
+  background-color: #02b5b2;
+  color: #313131;
 }
 
 
