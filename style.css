@@ -1,19 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 /*----------INTRO----------*/
 h1 {
-  color: #000; /*changed Name text color to black*/
   text-align: center;
 }
 
 /*----------BODY----------*/
 body {
-  font-family: Montserrat;
-  font-size: 20px; color: rgb(224, 209, 125);
-  background-color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px; color: rgb(255, 255, 255);
+  background-color: rgb(31, 31, 31);
   margin: 0;
   padding: 0px 0px 0px 0px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+header {
+  background-color:#5010ff;
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.main-image {
+  margin-top: 50px;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
 .english {
 font-family: "Montserrat", sans-serif;
 }
@@ -43,25 +56,29 @@ box-sizing: border-box;
 }
 
 .menu {
-float: left;
-width: 20%;
-text-align: center;
-background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
 }
 
 .menu a {
-background-color: #03a09b; /*changed bg color of links to cyan*/
-padding: 10px 0px 10px 0px;
-margin-top: 7px;
-display: block;
-width: 100%;
-color: #fff; /*changed text color of links to white*/
+  text-decoration: none;
+  padding: 10px 0px 10px 0px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: #fff;
+  /*changed text color of links to white*/
+}
+
+.menu a:hover {
+  background-color: #02b5b2;
+  color: #313131;
 }
 
 .main {
-float: left;
-width: 60%;
-padding: 0px 0px 0px 0px;
+  padding: 0 200px;
 }
 
 .right {
@@ -74,8 +91,8 @@ text-align: center;
 }
 
 .footer {
-  background-color:#ffffff; /*updated bg color to white to match header bg color*/
-  color: black;
+  background-color:#5010ff; /*updated bg color to match header bg color*/
+  color: rgb(255, 255, 255);
   text-align:center;
   padding:40px;
   margin-top:0px;
