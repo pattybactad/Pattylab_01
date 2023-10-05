@@ -1,6 +1,6 @@
 /*----------INTRO----------*/
 h1 {
-  color: rgb(255, 255, 255);
+  color: #000; /*changed Name text color to black*/
   text-align: center;
 }
 
