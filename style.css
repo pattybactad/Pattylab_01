@@ -50,12 +50,12 @@ background-color: #000000;
 }
 
 .menu a {
-background-color: #ffffff;
+background-color: #03a09b; /*changed bg color of links to cyan*/
 padding: 10px 0px 10px 0px;
 margin-top: 7px;
 display: block;
 width: 100%;
-color: rgb(0, 0, 0);
+color: #fff; /*changed text color of links to white*/
 }
 
 .main {
